@@ -51,7 +51,7 @@ var se = [...document.getElementsByTagName("select")];
 se.forEach((e)=>{
     sf(e); //on load
     e.addEventListener("change", () => {
-        setTimeout(function (){ // replace colors after original onchange
+        setTimeout(()=>{ // replace colors after original onchange
             sf(e);
         }, 1);
     });
